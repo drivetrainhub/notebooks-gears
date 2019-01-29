@@ -1,0 +1,15 @@
+# PyCharm settings
+*.idea/
+
+# virtual environment settings
+env/
+venv/
+
+# Python byte code
+*.pyc
+
+# personal action lists
+TODO*
+
+# temporary
+README.md
