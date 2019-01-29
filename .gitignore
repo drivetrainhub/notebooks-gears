@@ -8,6 +8,9 @@ venv/
 # Python byte code
 *.pyc
 
+# IPython
+.ipynb_checkpoints/
+
 # personal action lists
 TODO*
 
