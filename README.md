@@ -1,5 +1,5 @@
 <a href="https://www.drivetrainhub.com/">
-    <img src="https://storage.googleapis.com/static.drivetrainhub.com/img/dh_logo_text_217x80.png" alt="drawing" width="150"/>
+    <img src="https://storage.googleapis.com/static.drivetrainhub.com/img/dh_logo_text_217x80.png" alt="drawing" width="150" align="right"/>
 </a>
 
 # notebooks-gears
