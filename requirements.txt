@@ -3,6 +3,7 @@ attrs==19.1.0
 backcall==0.1.0
 bleach==3.1.0
 colorama==0.4.1 ; sys_platform == 'win32'
+cycler==0.10.0
 decorator==4.4.0
 defusedxml==0.5.0
 entrypoints==0.3
@@ -17,17 +18,21 @@ jupyter-client==5.2.4
 jupyter-console==6.0.0
 jupyter-core==4.4.0
 jupyter==1.0.0
+kiwisolver==1.0.1
 markupsafe==1.1.1
+matplotlib==3.0.3
 mistune==0.8.4
 nbconvert==5.4.1
 nbformat==4.4.0
 notebook==5.7.8
+numpy==1.16.2
 pandocfilters==1.4.2
 parso==0.4.0
 pickleshare==0.7.5
 prometheus-client==0.6.0
 prompt-toolkit==2.0.9
 pygments==2.3.1
+pyparsing==2.4.0
 pyrsistent==0.14.11
 python-dateutil==2.8.0
 pywinpty==0.5.5 ; os_name == 'nt'
