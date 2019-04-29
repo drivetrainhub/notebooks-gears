@@ -1,4 +1,6 @@
-[![Drivetrain Hub](https://storage.googleapis.com/static.drivetrainhub.com/img/dh_logo_text_217x80.png "Drivetrain Hub logo")](https://www.drivetrainhub.com/)
+<a href="https://www.drivetrainhub.com/">
+    <img src="https://storage.googleapis.com/static.drivetrainhub.com/img/dh_logo_text_217x80.png" alt="drawing" width="150"/>
+</a>
 
 # notebooks-gears
 
@@ -15,6 +17,7 @@ Categories of notebooks in this repository:
 - [Gear Geometry](https://github.com/drivetrainhub/notebooks-gears/tree/master/geometry)
 - [Gear Tooling](https://github.com/drivetrainhub/notebooks-gears/tree/master/tooling)
 - [Gear Strength](https://github.com/drivetrainhub/notebooks-gears/tree/master/strength)
+- [Gear Dynamics](https://github.com/drivetrainhub/notebooks-gears/tree/master/dynamics)
 
 ## Report Issues
 
