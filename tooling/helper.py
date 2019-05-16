@@ -1,4 +1,5 @@
 # Copyright 2019 Drivetrain Hub LLC
+# For non-commercial use only.  For commercial products and services, visit https://www.drivetrainhub.com.
 
 """Helper module for tooling notebooks."""
 
