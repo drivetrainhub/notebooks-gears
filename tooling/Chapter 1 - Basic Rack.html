@@ -13234,35 +13234,18 @@ The cost of manufacturing would be prohibitive if every gear required a differen
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./img/basic_rack.svg" alt="Basic rack diagram" style="max-height: 250px"/></p>
+<p><img src="./img/basic_rack.svg" alt="Basic rack diagram" style="max-height: 300px"/></p>
 <p style="text-align: center; font-weight: bold;">Basic rack tooth profile</p><div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
     Notice the geometric definition of a basic rack does not include information about number of gear teeth, gear tooth thickness, tip diameter, or root diameter.  This means a given basic rack can be referenced for many possible gear designs, and hence why it serves a good basis for gear tooling.
 </div>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pitch_fcn</span><span class="p">(</span><span class="n">module</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">module</span>
-
-<span class="k">def</span> <span class="nf">base_pitch_fcn</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">pressure_angle</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">module</span> <span class="o">*</span> <span class="n">cos</span><span class="p">(</span><span class="n">pressure_angle</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Bottom-Clearance">Bottom Clearance<a class="anchor-link" href="#Bottom-Clearance">&#182;</a></h4><p>Bottom clearance is defined as the distance between the basic rack root line and the tip line of the reciprocal mating rack.</p>
-<p><img src="./img/basic_rack_bottom_clearance.svg" alt="Basic rack bottom clearance" style="max-height: 230px"/></p>
+<p><img src="./img/basic_rack_bottom_clearance.svg" alt="Basic rack bottom clearance" style="max-height: 280px"/></p>
 <p style="text-align: center; font-weight: bold;">Basic rack with mating rack and bottom clearance</p><p>As observed in the figure above, the mathematical expression for bottom clearance can be written as:</p>
 $$c = h_f - h_a$$<p>Additionally, the root radius height is equal to the bottom clearance, thus the root radius can be expressed as:</p>
 $$\rho_F = \frac{c}{1 - \sin\alpha_n}$$<div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
@@ -13275,7 +13258,7 @@ $$\rho_F = \frac{c}{1 - \sin\alpha_n}$$<div class="alert alert-block alert-info"
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Maximum-Root-Radius">Maximum Root Radius<a class="anchor-link" href="#Maximum-Root-Radius">&#182;</a></h4><p>When designing a gear or its tooling, the maximum root radius of the basic rack is often of interest.  The maximum root radius is constrained by the basic rack tooth profile geometry, and may be limited by the bottom clearance to ensure the root radius starts at or below the common tooth depth.  The bottom clearance constraint is observed in the previous section.</p>
-<p><img src="./img/basic_rack_full_root.svg" alt="Basic rack full root radius" style="max-height: 230px"/></p>
+<p><img src="./img/basic_rack_full_root.svg" alt="Basic rack full root radius" style="max-height: 280px"/></p>
 <p style="text-align: center; font-weight: bold;">Full root radius of basic rack</p><p>If root radius is not limited by bottom clearance, the maximum root radius corresponds to a full root radius.  The solution of a full root radius can be obtained by formulating a system of equations.  First, an equation can be written for the horizontal coordinate:</p>
 $$\rho_F = \frac{s_\text{fillet}}{2 \cos\alpha_n}$$<p>where $s_\rm{fillet}$ is the spacewidth at the start of the root fillet, an unknown parameter.  Next, an equation can be written for the vertical coordinate:</p>
 $$\rho_F = \frac{h_\text{fillet}}{1 - \sin\alpha_n}$$<p>where $h_\text{fillet}$ is the height of the root fillet, an unknown parameter.  This equation was applied in the case of a root radius limited by bottom clearance, where $h_\rm{fillet} = c$.  We currently have two equations with three unknowns, so we need to introduce additional expressions to create a solvable system of equations.  By observing that $s_\text{fillet}$ and $h_\text{fillet}$ can be expressed as functions of a vertical coordinate, $f\{y\}$, we can create a solvable system.</p>
@@ -13284,51 +13267,6 @@ $$y_\text{fillet} = \frac{e_p \tan\alpha_n - e_p \sec\alpha_n + 2 h_f}{2 (\tan\a
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bottom_clearance_fcn</span><span class="p">(</span><span class="n">addendum</span><span class="p">,</span> <span class="n">dedendum</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Calculate the basic rack bottom clearance.&quot;&quot;&quot;</span>
-    
-    <span class="k">return</span> <span class="n">dedendum</span> <span class="o">-</span> <span class="n">addendum</span>
-
-
-<span class="k">def</span> <span class="nf">bottom_clearance_root_radius</span><span class="p">(</span><span class="n">addendum</span><span class="p">,</span> <span class="n">dedendum</span><span class="p">,</span> <span class="n">pressure_angle</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Calculate the basic rack root radius limited by bottom clearance.&quot;&quot;&quot;</span>
-    
-    <span class="n">bottom_clearance</span> <span class="o">=</span> <span class="n">bottom_clearance_fcn</span><span class="p">(</span><span class="n">addendum</span><span class="p">,</span> <span class="n">dedendum</span><span class="p">)</span>
-    
-    <span class="k">return</span> <span class="n">bottom_clearance</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">sin</span><span class="p">(</span><span class="n">pressure_angle</span><span class="p">))</span>
-
-
-<span class="k">def</span> <span class="nf">max_root_radius</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">pressure_angle</span><span class="p">,</span> <span class="n">addendum</span><span class="p">,</span> <span class="n">dedendum</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Calculate the basic rack maximum allowable root radius.  Only valid without undercut.&quot;&quot;&quot;</span>
-    
-    <span class="n">bottom_clearance_root_radius_limit</span> <span class="o">=</span> <span class="n">bottom_clearance_root_radius</span><span class="p">(</span><span class="n">addendum</span><span class="p">,</span> <span class="n">dedendum</span><span class="p">,</span> <span class="n">pressure_angle</span><span class="p">)</span>
-    
-    <span class="c1"># calculate full root radius</span>
-    <span class="n">e_p</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">module</span> <span class="o">/</span> <span class="mi">2</span>
-    <span class="n">tan_a</span> <span class="o">=</span> <span class="n">tan</span><span class="p">(</span><span class="n">pressure_angle</span><span class="p">)</span>
-    <span class="n">sec_a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">cos</span><span class="p">(</span><span class="n">pressure_angle</span><span class="p">)</span>
-    <span class="n">y_fillet</span> <span class="o">=</span> <span class="p">(</span><span class="n">e_p</span> <span class="o">*</span> <span class="n">tan_a</span> <span class="o">-</span> <span class="n">e_p</span> <span class="o">*</span> <span class="n">sec_a</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">dedendum</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">tan_a</span> <span class="o">*</span> <span class="n">sec_a</span> <span class="o">-</span> <span class="n">tan_a</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
-    <span class="n">full_root_radius</span> <span class="o">=</span> <span class="p">(</span><span class="n">dedendum</span> <span class="o">+</span> <span class="n">y_fillet</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">sin</span><span class="p">(</span><span class="n">pressure_angle</span><span class="p">))</span>
-    
-    <span class="c1"># conditional check against the root radius limited by bottom clearance </span>
-    <span class="k">if</span> <span class="n">bottom_clearance_root_radius_limit</span> <span class="o">&lt;</span> <span class="n">full_root_radius</span><span class="p">:</span>
-        <span class="n">maximum_root_radius</span> <span class="o">=</span> <span class="n">bottom_clearance_root_radius_limit</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">maximum_root_radius</span> <span class="o">=</span> <span class="n">full_root_radius</span>
-    
-    <span class="k">return</span> <span class="n">maximum_root_radius</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13351,7 +13289,7 @@ $$y_\text{fillet} = \frac{e_p \tan\alpha_n - e_p \sec\alpha_n + 2 h_f}{2 (\tan\a
 
 
 <div class="output_html rendered_html output_subarea ">
-<table style="margin-left: 0"><tr><th>$m_n$</th><th>$\alpha_n$</th><th>$h_a^*$</th><th>$h_f^*$</th><th>$\rho_F^*$</th><th>$\rho_{F,\rm{max}}^*$</th></tr><tr><td>$1\text{mm}$</td><td>$20^\circ$</td><td>$1$</td><td>$1.25$</td><td>$0.38$</td><td>$0.38$</td></tr></table>
+<table style="margin-left: 0"><tr><th>$m_n$</th><th>$\alpha_n$</th><th>$h_a^*$</th><th>$h_f^*$</th><th>$\rho_F^*$</th><th>$\rho_{F,\rm{max}}^*$</th><th>$p$</th><th>$p_b$</th><th>$c^*$</th></tr><tr><td>$1\text{mm}$</td><td>$20^\circ$</td><td>$1$</td><td>$1.25$</td><td>$0.38$</td><td>$0.38$</td><td>$3.14\text{mm}$</td><td>$2.95\text{mm}$</td><td>$0.25$</td></tr></table>
 </div>
 
 </div>
@@ -13380,7 +13318,7 @@ $$y_\text{fillet} = \frac{e_p \tan\alpha_n - e_p \sec\alpha_n + 2 h_f}{2 (\tan\a
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Undercut">Undercut<a class="anchor-link" href="#Undercut">&#182;</a></h3><p>The geometry of an undercut basic rack tooth profile is reviewed here.  Undercut is a geometric feature in the root of a basic rack.  Undercut exists when the rack tooth profile is not tangent to the root geometry, but instead intersects a line oriented at a pressure angle less than the tooth profile pressure angle.</p>
 <p>Undercut angle, $\alpha_{FP}$, and undercut size, $U_{FP}$, are used to define the undercut of a basic rack.  These are illustrated in the undercut basic rack below.</p>
-<p><img src="./img/basic_rack_undercut.svg" alt="Undercut basic rack diagram" style="max-height: 250px"/></p>
+<p><img src="./img/basic_rack_undercut.svg" alt="Undercut basic rack diagram" style="max-height: 300px"/></p>
 <p style="text-align: center; font-weight: bold;">Undercut basic rack tooth profile</p><p>Notice the base pitch of the undercut profile, $p_{bP}$, differs from the tooth profile base pitch, $p_b$, despite each profile having the same pitch, $p$.  As we will see in the chapters on spur and helical gear geometry, this difference explains why only gears of the same module and reference pressure angle can mesh.  However, there are some exceptions for the generating tool geometry that will be discussed in the relevant notebooks.</p>
 <div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
     Undercut is of particular interest when using a basic rack as a basis for a generating cutting tool, in which case it is referred to as <i>protuberance</i>.  Later notebooks on gear tooling will elaborate on the usefulness of protuberance for gear manufacturing and design, and its influence on gear root geometry. 
