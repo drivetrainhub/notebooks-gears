@@ -3,10 +3,9 @@
 
 """Helper module for geometry notebooks."""
 
-from IPython.display import HTML
 import random
-
 from math import degrees
+from IPython.display import display, HTML
 
 
 def hide_toggle(for_next=False, toggle_text=None):
