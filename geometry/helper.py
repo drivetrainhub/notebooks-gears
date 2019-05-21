@@ -1,9 +1,11 @@
-"""Helper module for Jupyter notebooks."""
+# Copyright 2019 Drivetrain Hub LLC
+# For non-commercial use only.  For commercial products and services, visit https://www.drivetrainhub.com.
 
-from IPython.display import HTML
+"""Helper module for geometry notebooks."""
+
 import random
-
 from math import degrees
+from IPython.display import display, HTML
 
 
 def hide_toggle(for_next=False, toggle_text=None):
@@ -50,3 +52,31 @@ def round_degrees(rad) -> int:
 
     if rad is not None:
         return int(round(degrees(rad), 0))
+
+
+def html_table(headings, rows):
+    """Display an HTML table in a Jupyter notebook.
+
+    :param headings: List of heading strings.  Can include MathJax notation.
+    :param rows: List of lists to represent rows of data.
+    :return: None
+    """
+
+    html_str = '<table style="margin-left: 0">'
+
+    html_str += '<tr>'
+
+    for h in headings:
+        html_str += f'<th>{h}</th>'
+
+    html_str += '</tr>'
+
+    for row in rows:
+        html_str += '<tr>'
+        for c in row:
+            html_str += f'<td>{c}</td>'
+
+        html_str += '</tr>'
+
+    html_str += '</table>'
+    display(HTML(html_str))
