@@ -13185,7 +13185,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">inv</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
@@ -13358,13 +13358,13 @@ Requirements are as follows:</p>
 
  
  
-<div id="f4e4452c-19e8-46c0-a928-c679df637011"></div>
+<div id="b1f1daca-ec7c-4591-b262-ebd6a3253bc0"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#f4e4452c-19e8-46c0-a928-c679df637011');
+var element = $('#b1f1daca-ec7c-4591-b262-ebd6a3253bc0');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "a377720f7b6b481580ef54bca7268e12", "version_major": 2, "version_minor": 0}
+{"model_id": "b1e2117cec1c4eb8b3402464380df269", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -13376,7 +13376,7 @@ var element = $('#f4e4452c-19e8-46c0-a928-c679df637011');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">alpha</span><span class="o">=</span><span class="n">df_requirements</span><span class="p">[</span><span class="s2">&quot;Common&quot;</span><span class="p">][</span><span class="s2">&quot;Standard pressure angle&quot;</span><span class="p">]</span><span class="o">/</span><span class="mi">180</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span>
@@ -13403,7 +13403,7 @@ var element = $('#f4e4452c-19e8-46c0-a928-c679df637011');
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z_1</span> <span class="o">=</span> <span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
@@ -13510,7 +13510,7 @@ Since the operating center distance is specified as a requirement, the working p
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a_0</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="p">(</span><span class="n">z_1</span><span class="o">+</span><span class="n">z_2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
@@ -13567,7 +13567,7 @@ $$x_1 + x_2 = \frac{\left(z_1+z_2\right) \left(\rm{inv}\alpha_w -\rm{inv}\alpha\
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_total</span> <span class="o">=</span> <span class="p">(</span><span class="n">z_1</span> <span class="o">+</span> <span class="n">z_2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">inv</span><span class="p">(</span><span class="n">alpha_w</span><span class="p">)</span> <span class="o">-</span> <span class="n">inv</span><span class="p">(</span><span class="n">alpha</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span> 
@@ -13591,7 +13591,7 @@ $$ \left(x_1 + x_2 \right)_{\rm{new}}= x_1+x_2 + x_{mod}$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_mod</span> <span class="o">=</span> <span class="o">-</span><span class="n">B_req</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">alpha</span><span class="p">))</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">alpha_w</span><span class="p">)</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span>
@@ -13639,7 +13639,7 @@ Using the formula for equal root stress,</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_total</span> <span class="o">=</span> <span class="n">x_total</span> <span class="o">+</span> <span class="n">x_mod</span>
@@ -13710,7 +13710,7 @@ $$c_1 =a - a_0 - m\left(x_1+x_2 - y_1 \right)$$$$c_2 =a - a_0 - m\left(x_1+x_2 -
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_req</span> <span class="o">=</span> <span class="mf">0.25</span>
@@ -13916,7 +13916,7 @@ $$R = \frac{\frac{\sqrt{d^2_{t,1} -d^2_{r,1}} + \sqrt{d^2_{t,2} -d^2_{r,2}}}{4} 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_1</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">a_0</span> <span class="o">-</span> <span class="n">m</span> <span class="o">*</span> <span class="p">(</span><span class="n">x_1</span> <span class="o">+</span> <span class="n">x_2</span> <span class="o">-</span> <span class="n">y_1</span> <span class="p">)</span>
@@ -13986,13 +13986,13 @@ $$R = \frac{\frac{\sqrt{d^2_{t,1} -d^2_{r,1}} + \sqrt{d^2_{t,2} -d^2_{r,2}}}{4} 
 
  
  
-<div id="9365b1cd-eabf-4f0e-86c4-57ae631edc6e"></div>
+<div id="c992e7bb-edef-43eb-9f17-75a2de57ede7"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#9365b1cd-eabf-4f0e-86c4-57ae631edc6e');
+var element = $('#c992e7bb-edef-43eb-9f17-75a2de57ede7');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "dc964870f8c442cbb40f6f88409f90c9", "version_major": 2, "version_minor": 0}
+{"model_id": "8072f81837724f43bbc96b908c0405e9", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
