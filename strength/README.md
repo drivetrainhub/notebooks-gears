@@ -12,9 +12,10 @@
 
 The following is a list of recommended topics to include in the Gear Strength notebooks:
 
-- [ ] Chapter 1 - Force Analysis
-- [ ] Chapter 2 - Root Stress
-- [ ] Chapter 3 - Contact Stress
+- [ ] Chapter 4 - ISO Bending
+- [ ] Chapter 5 - ISO Contact
+- [ ] Chapter 6 - AGMA Bending
+- [ ] Chapter 7 - AGMA Contact
 
 ## Contribute
 
