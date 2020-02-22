@@ -1,4 +1,4 @@
-<a href="https://www.drivetrainhub.com/">
+<a href="https://drivetrainhub.com/">
     <img src="https://storage.googleapis.com/static.drivetrainhub.com/img/dh_logo_text_217x80.png" alt="drawing" height="40" align="right"/>
 </a>
 
@@ -6,7 +6,7 @@
 
 ---
 
- Drivetrain engineering notebooks on topics relevant to *gear geometry*.  This is a subset of the [Drivetrain Hub | Notebook Series](https://drivetrainhub.com/code/notebooks).
+ Drivetrain engineering notebooks on topics relevant to *gear geometry*.  This is a subset of the [Drivetrain Hub | Notebook Series](https://drivetrainhub.com/notebooks/).
 
 ## TODO
 

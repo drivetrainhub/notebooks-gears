@@ -1,4 +1,4 @@
-<a href="https://www.drivetrainhub.com/">
+<a href="https://drivetrainhub.com/">
     <img src="https://storage.googleapis.com/static.drivetrainhub.com/img/dh_logo_text_217x80.png" alt="drawing" height="40" align="right"/>
 </a>
 
@@ -6,7 +6,7 @@
 
 ---
 
-[Drivetrain Hub | Notebook Series](https://drivetrainhub.com/code/notebooks) - learn, collaborate, and share knowledge in the field of drivetrain engineering with notebooks.  This repository is a collection of our notebooks on technical subjects specific to gears.
+[Drivetrain Hub | Notebook Series](https://drivetrainhub.com/notebooks/) - learn, collaborate, and share knowledge in the field of drivetrain engineering with notebooks.  This repository is a collection of our notebooks on technical subjects specific to gears.
 
 For helpful resources, such as contributing guidelines, our notebook template file, or learning about Markdown, Python, and Jupyter, see our [notebooks repo](https://github.com/drivetrainhub/notebooks).
 
