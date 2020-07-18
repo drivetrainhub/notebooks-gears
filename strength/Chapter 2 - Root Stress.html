@@ -13018,45 +13018,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
-<style type="text/css">
     /*This file contains any manual css for this page that needs to override the global styles.
 This is only required when different pages style the same element differently. This is just
 a hack to deal with our current css styles and no new styling should be added in this file.*/
@@ -13182,7 +13143,7 @@ div#notebook {
 $$\sigma_b = \frac{\textrm{Bending moment}}{\textrm{Section modulus}} = \frac{F_N \cos\alpha_a\prime}{\frac{1}{6} b S_q^2}$$<p>Compressive stress is calculated as:</p>
 $$\sigma_c = \frac{F_N \sin\alpha_a\prime}{b S_q}$$<p>Shear stress is calculated as:</p>
 $$\tau_m = \frac{\cos\alpha_a\prime}{b S_q}$$<p>where $S_q$ is the thickness of the weakest part at the root, anfd $\alpha_a \prime$ is the pressure angle at the tip corner.  Research has shown that almost all stress at the gear tooth root is from bending, and the contribution of shear stress and compressive stress can be neglected.</p>
-<p><img src="./img/bending.png" alt="Involute parameters" style="max-width: 350px"/></p>
+<p><img src="./img/bending.png" alt="Involute parameters" style="width: 100%; max-width: 350px"/></p>
 <p><p style="text-align: center; font-weight: bold;">Stresses on gear tooth.</p>
 <span style="font-size: 8pt; float: right">Image credit: G. M. Maitra, Handbook of Gear Design </span></p>
 
@@ -13195,7 +13156,7 @@ $$\tau_m = \frac{\cos\alpha_a\prime}{b S_q}$$<p>where $S_q$ is the thickness of 
 <h2 id="Root-Bending-Stress-Calculation">Root Bending Stress Calculation<a class="anchor-link" href="#Root-Bending-Stress-Calculation">&#182;</a></h2><p>The bending stress is organized as:</p>
 $$\sigma_b = \frac{F_t}{b m_n} \frac{6m_n h_q \cos\alpha_a \prime}{S_q^2 \cos\alpha}$$<p>The second fraction is defined as the tooth form factor according to:</p>
 $$q_k = \frac{6m_n h_q \cos\alpha_a \prime}{S_q^2 \cos\alpha}$$<p>where values for $q_k$ are obtained from the figure below.</p>
-<p><img src="./img/qk.png" alt="Involute parameters" style="max-width: 550px; transform: rotate(90deg)"/></p>
+<p><img src="./img/qk.png" alt="Involute parameters" style="width: 100%; max-width: 550px; transform: rotate(90deg)"/></p>
 <p><p style="text-align: center; font-weight: bold;">Tooth form factor for bending stress.</p>
 <span style="font-size: 8pt; float: right">Image credit: G. M. Maitra, Handbook of Gear Design </span></p>
 
@@ -13234,7 +13195,7 @@ The ratio of facewidth to pitch diameter is taken as $b_1 / d_{p,1} = 0.5$ to pr
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell rendered celltag_hide_input">
 
 <div class="output_wrapper">
 <div class="output">
@@ -13281,7 +13242,7 @@ where the pitch diameter is $d_{p,1} = m_n z_1$, facewidth is $b_1 = 0.5 d_{p,1}
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell rendered celltag_hide_input">
 
 <div class="output_wrapper">
 <div class="output">

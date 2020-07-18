@@ -13018,45 +13018,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
-<style type="text/css">
     /*This file contains any manual css for this page that needs to override the global styles.
 This is only required when different pages style the same element differently. This is just
 a hack to deal with our current css styles and no new styling should be added in this file.*/
@@ -13196,7 +13157,7 @@ $\newcommand{\rpm}{\text{rpm}}$
 <li>Plane of action is along the path tangent to the involute base circles</li>
 </ul>
 <p>The visualization of a helical gear clearly shows the key geometric difference between it and a spur gear.</p>
-<p><img src="./img/drivetrainhub_helical_gear_external_17z.png" alt="External helical gear (right-handed)" style="max-height: 200px"/></p>
+<p><img src="./img/drivetrainhub_helical_gear_external_17z.png" alt="External helical gear (right-handed)" style="max-height: 200px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Helical gear CAD model</p><p>A helical gear is <em>similar</em> to a spur gear with an applied twist along its axial axis.  Conceptually, this description is sufficient, but the mathematics of helical gear geometry must be considered in more detail to accurately define it.  This notebook will review the geometric attributes and their significance to the operation of helical gear pairs.</p>
 <div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
     <b>The geometry of a helical gear is directly dependent on the manufacturing tooling and processes used to make the gear.</b>
@@ -13210,7 +13171,7 @@ $\newcommand{\rpm}{\text{rpm}}$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Helix">Helix<a class="anchor-link" href="#Helix">&#182;</a></h3><p>To define the geometry of a helical gear tooth, we shall first define the <em>helix</em>.  A helix is a shape commonly associated with components such as coil springs, bolt threads, and gear hobs.  A helix contains certain characteristics that make it well suited for many applications, including the manufacturing and operation of mechanical gears.</p>
-<p><img src="./img/wikipedia_helix.svg" alt="Helix curve" style="max-height: 300px"/></p>
+<p><img src="./img/wikipedia_helix.svg" alt="Helix curve" style="max-height: 300px; max-width: 100%"/></p>
 <p><p style="text-align: center; font-weight: bold;">Helix curve (right-handed)</p>
 <span style="font-size: 8pt; float: right">Image credit: <a href="//commons.wikimedia.org/wiki/User:RobHar" title="User:RobHar">RobHar</a></span><br></p>
 
@@ -13221,7 +13182,7 @@ $\newcommand{\rpm}{\text{rpm}}$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For helical gears, a reference helix is defined by a <em>helix angle</em>, $\beta$, at the theoretical pitch diameter.  The sign of the helix angle determines the hand of the helix, with positive (+) being right-hand.  The diagram below illustrates the helix angle, not to be confused with the helix lead angle.</p>
-<p><img src="./img/drivetrainhub_helix_angle.svg" alt="Helix curve" style="max-height: 300px"/></p>
+<p><img src="./img/drivetrainhub_helix_angle.svg" alt="Helix curve" style="max-height: 300px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Helix angle of gear tooth</p><p>If we imagine unwrapping the helix curve along its helix angle, we can derive an expression for the helix pitch length as a function of helix angle and theoretical pitch diameter:</p>
 $$p_\beta = \frac{\pi d}{\tan\beta}$$<p>and by acknowledging the helix pitch length as a constant regardless of diameter, the helix angle at an arbitrary diameter, $d_y$, is:</p>
 $$\beta_y = \tan^{-1}\left(\frac{d_y \tan\beta}{d}\right)$$<div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
@@ -13241,7 +13202,7 @@ $$x(t) = r \cos t$$$$y(t) = r \sin t$$$$z(t) = c t$$<p>where the helix pitch, i.
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell rendered celltag_hide_input">
 
 <div class="output_wrapper">
 <div class="output">
@@ -13304,7 +13265,7 @@ $$x(t) = r \cos t$$$$y(t) = r \sin t$$$$z(t) = c t$$<p>where the helix pitch, i.
 <li><strong>Transverse plane</strong>: Plane normal to the axis of rotation, i.e. it is the plane of gear rotation.</li>
 <li><strong>Normal plane</strong>: Plane normal to the gear tooth surface, oriented by the helix angle relative to the transverse plane. </li>
 </ul>
-<p><img src="./img/drivetrainhub_normal_and_transverse_planes.svg" alt="Transverse and normal planes" style="max-height: 250px"/></p>
+<p><img src="./img/drivetrainhub_normal_and_transverse_planes.svg" alt="Transverse and normal planes" style="max-height: 250px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Transverse and normal planes</p><p>Lengths in the transverse and normal planes are related by helix angle according to:</p>
 $$\cos\beta = \frac{\text{normal length}}{\text{transverse length}}$$
 </div>
@@ -13477,7 +13438,7 @@ $$\cos\beta = \frac{\text{normal length}}{\text{transverse length}}$$
 <h4 id="Module">Module<a class="anchor-link" href="#Module">&#182;</a></h4><p>Module is a defining parameter of gear tooth size, with units of $\rm{mm}$.  Module values exist in both the normal and transerve planes.  Geometrically, it is easiest to understand the transverse module, expressed as millimeters of theoretical pitch diameter per tooth:</p>
 $$m_t = \frac{d}{z}$$<p>As a function of basic parameters, the transverse module is calculated as:</p>
 $$m_t = \frac{m_n}{\cos\beta}$$<p>By examining a transverse section of a helical gear, we can derive the transverse pitch and its relationship to module.</p>
-<p><img src="./img/drivetrainhub_transverse_pitch.svg" alt="Transverse pitch and theoretical pitch diameter" style="max-height: 300px"/></p>
+<p><img src="./img/drivetrainhub_transverse_pitch.svg" alt="Transverse pitch and theoretical pitch diameter" style="max-height: 300px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Transverse pitch and theoretical pitch diameter</p><p>where the transverse pitch equals:</p>
 $$p_t = \frac{\pi d}{z} = \pi m_t$$<p>Diametral pitch, $P_d$, is the module equivalent parameter used with the system of imperial units, with units of $\rm{in}^{-1}$:</p>
 $$P_d = \frac{25.4}{m}$$
@@ -13488,7 +13449,7 @@ $$P_d = \frac{25.4}{m}$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Pressure-Angle-">Pressure Angle <a name="Basic-Parameters_Pressure-Angle" /><a class="anchor-link" href="#Pressure-Angle-">&#182;</a></h4><p>Since helical gears are a form of cylindrical involute gears, the pressure angle at the theoretical pitch diameter is used as a defining parameter.  Geometrically, it is easiest to understand the transverse pressure angle as illustrated below.</p>
-<p><img src="./img/drivetrainhub_involute_pressure_angle.svg" alt="Involute pressure angle" style="max-width: 350px"/></p>
+<p><img src="./img/drivetrainhub_involute_pressure_angle.svg" alt="Involute pressure angle" style="width: 100%; max-width: 350px"/></p>
 <p style="text-align: center; font-weight: bold;">Involute curve pressure angle in transverse plane</p><p>The transverse pressure angle can be calculated as a function of the normal pressure angle and helix angle:</p>
 $$\alpha_t = \tan^{-1}\left(\frac{\tan\alpha_n}{\cos\beta}\right)$$<div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
     The pressure angles explained here are sometimes called <i>reference</i> values, since they refer to the pressure angles associated with the theoretical pitch diameter.  Recall, involute pressure angle changes as a function of diameter.  In a later section, the <i>working</i> pressure angle of a gear pair is explained.
@@ -13501,7 +13462,7 @@ $$\cos\alpha_{ty} = \frac{d_b}{d_y}$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Tooth-Thickness">Tooth Thickness<a class="anchor-link" href="#Tooth-Thickness">&#182;</a></h3><p>Tooth thickness of a helical gear is defined in the transverse and normal planes.  Transverse tooth thickness is defined as the arc length of tooth material at the theoretical pitch diameter.  Tooth thickness is important to tooth bending strength and is primarily a function of the gear module and profile shift.  For more about profile shift, see the blue info box below.</p>
-<p><img src="./img/drivetrainhub_tooth_thickness.svg" alt="Transverse tooth thickness diagram" style="width: 450px"/></p>
+<p><img src="./img/drivetrainhub_tooth_thickness.svg" alt="Transverse tooth thickness diagram" style="width: 100%; max-width: 450px"/></p>
 <p style="text-align: center; font-weight: bold;">Transverse tooth thickness diagram</p><p>Tooth thickness and profile shift are related by this expression:</p>
 $$s_t = \frac{m_n}{\cos\beta} \left(\frac{\pi}{2} + 2 x^* \tan\alpha_n\right)$$<p>From the diagram, it is easy to see that transverse tooth thickness at an arbitrary diameter, $d_y$, is:</p>
 $$s_{ty} = d_y \psi_y$$<p>where the corresponding tooth thickness half angle, $\psi_y$, is observed as:</p>
@@ -13523,7 +13484,7 @@ $$s_{na} = s_{ta} \cos\beta_a$$<div class="alert alert-block alert-danger" style
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Tooth-Flank">Tooth Flank<a class="anchor-link" href="#Tooth-Flank">&#182;</a></h3><p>The helical gear tooth flank is a 3-dimensional surface that can be defined numerically by computing an involute curve for each transverse section along the gear facewidth.  Each successive involute is the same as the previous, but with a rotational transform applied to account for the helix hand and angle.</p>
-<p><img src="./img/drivetrainhub_helical_tooth_flank.png" alt="Helical gear tooth flank" style="max-width: 300px"/></p>
+<p><img src="./img/drivetrainhub_helical_tooth_flank.png" alt="Helical gear tooth flank" style="width: 100%; max-width: 300px"/></p>
 <p style="text-align: center; font-weight: bold;">Helical gear tooth flank</p><div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
     <b>The involute profile of a helical gear tooth is in the transverse plane</b>.  
     <br><br>
@@ -13540,7 +13501,7 @@ $$s_{na} = s_{ta} \cos\beta_a$$<div class="alert alert-block alert-danger" style
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Root-Fillet">Root Fillet<a class="anchor-link" href="#Root-Fillet">&#182;</a></h3><p>The root fillet is an important, but complex, feature of any cylindrical involute gear.  The gear tooth bending strength is highly dependent on the root geometry.</p>
-<p><img src="./img/drivetrainhub_root_fillet.svg" alt="Root fillet and boundary point" style="width: 230px"/></p>
+<p><img src="./img/drivetrainhub_root_fillet.svg" alt="Root fillet and boundary point" style="width: 100%; max-width: 230px"/></p>
 <p style="text-align: center; font-weight: bold;">Root fillet and boundary point</p><p>The root fillet is not a simple curve that can be described by a set of parametric equations. The reason for its complexity is because it depends on the manufacturing tool geometry and cutting process.  To learn more about this, refer to our notebooks on gear tooling.</p>
 
 </div>
@@ -13561,7 +13522,7 @@ $$\tan\alpha_{tF} = \tan\alpha_t - \frac{\toolheight}{r_b \sin\alpha_t}$$<p>whic
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Undercut">Undercut<a class="anchor-link" href="#Undercut">&#182;</a></h4><p>Undercut of a helical gear tooth root is a consequence of the cutting tool removing a portion of the involute profile instead of being tangent to the involute.  The path of the cutting tool tip in plane rolling action with the gear is what generates the undercut root shape.</p>
-<p><img src="./img/drivetrainhub_root_fillet_undercut.svg" alt="Undercut root fillet and boundary point" style="width: 200px"/></p>
+<p><img src="./img/drivetrainhub_root_fillet_undercut.svg" alt="Undercut root fillet and boundary point" style="width: 100%; max-width: 200px"/></p>
 <p style="text-align: center; font-weight: bold;">Undercut root fillet and boundary point</p><p>Undercut can be related back to certain geometric properties of the gear.  Undercut caused by a rack generation cutting process can be avoided with positive profile shift, thus the following condition is formulated to avoid undercut:</p>
 $$x \geq h_a^* - \frac{z \sin^2\alpha_t}{2 \cos\beta}$$<p>Similarly, a condition for minimum number of teeth to avoid undercut is:</p>
 $$z \geq \frac{2 \cos\beta}{\sin^2\alpha_t}\left(h_a^* - x^*\right)$$<p>More complicated cases of undercut are possible with protuberance cutting tools, but are outside the scope of this notebook.  To learn more about the influence of protuberance, see the notebooks on gear tooling.</p>
@@ -13581,7 +13542,7 @@ $$z \geq \frac{2 \cos\beta}{\sin^2\alpha_t}\left(h_a^* - x^*\right)$$<p>More com
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Internal">Internal<a class="anchor-link" href="#Internal">&#182;</a></h3><p>Thus far, we have focused on helical gears of the <em>external</em> type, meaning the gear teeth are external to the gear blank (body).  In certain gear trains or applications, helical gears of the <em>internal</em> type may be required or better suited.  Below illustrates an internal helical gear with 17 teeth and a right-hand helix.</p>
-<p><img src="./img/drivetrainhub_helical_gear_internal_17z.png" alt="Internal helical gear (right-handed)" style="max-height: 200px"/></p>
+<p><img src="./img/drivetrainhub_helical_gear_internal_17z.png" alt="Internal helical gear (right-handed)" style="max-height: 200px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Internal helical gear CAD model</p><p>Despite visual and operational differences, external and internal helical gears are geometrically similar in the use of involute tooth profiles.  This is important to theoretically achieving conjugate action when an internal gear meshes with an external gear.</p>
 <p>Key differences of internal gears:</p>
 <ul>
@@ -13607,7 +13568,7 @@ $$z \geq \frac{2 \cos\beta}{\sin^2\alpha_t}\left(h_a^* - x^*\right)$$<p>More com
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell rendered celltag_hide_input">
 
 <div class="output_wrapper">
 <div class="output">
@@ -14027,7 +13988,7 @@ $$z \geq \frac{2 \cos\beta}{\sin^2\alpha_t}\left(h_a^* - x^*\right)$$<p>More com
 $$p_{bt} = \frac{\pi d_b}{z}$$<p>Expand and simplify the equation to obtain the transverse base pitch as a function of normal module, normal pressure angle, and helix angle:</p>
 $$p_{bt}\{m_n, \alpha_n, \beta\} = \frac{\pi}{z} d \cos\alpha_t = \frac{\pi m_n}{\cos\beta} \cos\left(\tan^{-1}\left(\frac{\tan\alpha_n}{\cos\beta}\right)\right)$$<p>The normal base pitch can be expressed as a function of normal module and normal pressure angle:</p>
 $$p_{bn}\{m_n, \alpha_n\} = \pi m_n \cos\alpha_n$$<p>which is easily observed from the basic rack geometry.</p>
-<p><img src="./img/drivetrainhub_basic_rack.svg" alt="Basic rack profile" style="max-height: 300px"/></p>
+<p><img src="./img/drivetrainhub_basic_rack.svg" alt="Basic rack profile" style="max-height: 300px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Basic rack profile illustrating base pitch</p><div class="alert alert-block alert-info" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
     To learn more about the basic rack and its significance to gear geometry and manufacturing, refer to our notebooks on gear tooling.
 </div>
@@ -14067,7 +14028,7 @@ $$p_{bn}\{m_n, \alpha_n\} = \pi m_n \cos\alpha_n$$<p>which is easily observed fr
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Pressure-Angle">Pressure Angle<a class="anchor-link" href="#Pressure-Angle">&#182;</a></h3><p>The pressure angle of main interest to a cylindrical involute gear mesh is the <em>working pressure angle</em>, $\alpha_w$.  It is the transverse pressure angle formed by the gear mesh <em>pressure line</em>, a line tangent to the base circles and commonly referred to as the <em>line of action</em>.</p>
-<p><img src="./img/drivetrainhub_working_pressure_angle.svg" alt="Working pressure angle between two base circles" style="height: 300px"/></p>
+<p><img src="./img/drivetrainhub_working_pressure_angle.svg" alt="Working pressure angle between two base circles" style="height: 300px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Working pressure angle, center distance, line of action, and pitch point</p><p>From this figure, working pressure angle is derived as:</p>
 $$\alpha_w = \cos^{-1}\left(\frac{d_{b1} + d_{b2}}{2 a}\right)$$<p>Notice that working pressure angle is not necessarily equal to the reference pressure angle, and the only <em>mesh</em> parameter determining so is the center distance.  Working pressure angle can also be expressed as a function of profile shifts for the condition of zero backlash:</p>
 $$\inv\alpha_w = \inv\alpha_t + 2 \tan\alpha_n \frac{x_1^* + x_2^*}{z_1 + z_2}$$<p>where $\text{inv}$ is the involute function.  Notice when the sum of profile shift coefficients equals zero, $\Sigma x^* = x_1^* + x_2^* = 0$, the working pressure angle equals the reference pressure angle (with zero backlash, otherwise not true).</p>
@@ -14133,7 +14094,7 @@ $$c_{f1,2} = a - \frac{d_{a2,1} - d_{f1,2}}{2}$$<p>The recommended minimum value
 <li><strong>Normal backlash, $j_{nn}$</strong>: Linear length of backlash normal to the helicoid tooth surface in the normal plane.</li>
 </ul>
 <p>Backlash is present in a helical gear pair when the center distance, $a$, is increased from the theoretical center distance, $a_{j0}$.  This increase creates a gap between the inactive flanks of the meshing gear teeth.  Backlash can also be interpreted as <em>tooth thinning</em> by reducing the sum of profile shifts from a theoretical value corresponding to zero backlash.</p>
-<p><img src="./img/drivetrainhub_backlash_line_of_action.svg" alt="Center distance variation and backlash in the line of action" style="height: 250px"/></p>
+<p><img src="./img/drivetrainhub_backlash_line_of_action.svg" alt="Center distance variation and backlash in the line of action" style="height: 250px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Center distance increase and backlash normal to involute profiles</p><p>The radial backlash, also known as <em>radial play</em>, can be computed as the difference of actual center distance and theoretical center distance:</p>
 $$j_r = \Delta a = a - a_{j0}$$<p>By resolving the backlash in the directions of interest, each component can be calculated accordingly:</p>
 $$j_{tt} = 2 j_r \tan\alpha_w$$$$j_{tn} = j_{tt} \cos\alpha_w$$$$j_{nn} = j_{tn} \cos\beta_b$$<p>There is also a backlash value known as <em>angular backlash</em>.  It is the angle of gear rotation in the backlash region, and can be expressed as:</p>
@@ -14146,7 +14107,7 @@ $$j_\theta = \frac{2 j_{tt}}{d_w}$$<p>Since angular backlash depends on pitch di
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Plane-of-Action">Plane of Action<a class="anchor-link" href="#Plane-of-Action">&#182;</a></h3><p>The plane of action is coincident with the line of action in the transverse plane, and extends along the effective facewidth of a meshing gear pair.  It is within this plane that flanks of helical gear teeth make contact as the gears roll through a mesh cycle.</p>
-<p><img src="./img/drivetrainhub_plane_of_action.svg" alt="Plane of action for helical gear pair" style="height: 325px"/></p>
+<p><img src="./img/drivetrainhub_plane_of_action.svg" alt="Plane of action for helical gear pair" style="height: 325px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Plane of action for helical gear pair</p><p>The figure above outlines the plane of action in blue, with the orange area being the active region of contact.  The diagonal orange lines are lines of contact between successive pairs of meshing teeth.  The following sections review the plane of action for contact geometry and kinematics of a helical gear pair.</p>
 
 </div>
@@ -14172,7 +14133,7 @@ $$j_\theta = \frac{2 j_{tt}}{d_w}$$<p>Since angular backlash depends on pitch di
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Active-Profile">Active Profile<a class="anchor-link" href="#Active-Profile">&#182;</a></h4><p>During the mesh cycle of a helical gear pair, the involute tooth profiles have a starting point and ending point.  The region of involute profile between these start and end points is termed the <em>active profile</em>.  Intuitively, the start and end points are referred to as the <em>start of active profile</em> (SAP) and <em>end of active profile</em> (EAP).  Diameters or roll angles are typically used to indicate the SAP and EAP, with SAP as the lower value by convention.</p>
 <p>The active profile can be understood by visualizing the active portion of the line of action in a transverse section of a helical gear pair.  This active segment may be called the <em>contact plane</em> or <em>plane of contact</em>.</p>
-<p><img src="./img/drivetrainhub_active_line_of_action.svg" alt="Active contact region in the line of action for a helical gear pair" style="height: 300px"/></p>
+<p><img src="./img/drivetrainhub_active_line_of_action.svg" alt="Active contact region in the line of action for a helical gear pair" style="height: 300px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Contact plane in the line of action</p><p>From the figure, line $\overline{\text{AE}}$ is the active profile trace in the line of action, thus gear $1$ SAP and EAP are at points $\rm{A}$ and $\rm{E}$, respectively.  Due to the convention of SAP always being the lower value, the SAP and EAP of gear $2$ are at points $\rm{E}$ and $\rm{A}$, respectively.  An expression for transverse pressure angle at the point of contact can be derived as:</p>
 $$\alpha_{t\rm{Y1}} = \tan^{-1} \left( \tan\alpha_w - \frac{z_2}{z_1} \left( \tan\alpha_{t\rm{Y2}} - \tan\alpha_w \right)\right)$$<p>where $\rm{Y}$ indicates an arbitrary point of contact, thus $\alpha_{t\rm{Y2}} = \alpha_{ta2}$ can be used to calculate the SAP of gear $1$.  The contact plane length is calculated as:</p>
 $$\overline{\rm{AE}} = r_{b1} \left( \tan\alpha_{ta1} - \tan\alpha_w \right) + r_{b2} \left( \tan\alpha_{ta2} - \tan\alpha_w \right)$$<p>It is worth noting that length $\overline{\text{BE}}$ equals the transverse base pitch.  Notice the importance of equal base pitch for two gears to achieve the desired engagement of gear teeth as they rotate.  In actual manufactured helical gears, imperfect base pitch exists and contributes to uneven load share between gear teeth, which leads to higher-than-nominal loads on certain teeth and may cause amplitude modulated vibrations and noise.</p>
@@ -14189,7 +14150,7 @@ $$\overline{\rm{AE}} = r_{b1} \left( \tan\alpha_{ta1} - \tan\alpha_w \right) + r
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Contact-Path">Contact Path<a class="anchor-link" href="#Contact-Path">&#182;</a></h4><p>A helical gear tooth surface is constructed from a circle involute swept along a helical path, creating an <em>involute helicoid</em>.  The circle involute is a curve of continuously varying radius.  Therefore, when two opposing helical gear tooth surfaces are brought into contact, the contact occurs along a line.</p>
 <p>Since a helical gear mesh has multiple teeth in contact during a mesh cycle, multiple lines of contact exist.  By examining the geometric properties of the contact lines in the plane of action, attributes of contact through a mesh cycle can be understood.</p>
-<p><img src="./img/drivetrainhub_helical_contact_lines.svg" alt="Contact plane with contact lines of meshing helical gear teeth" style="height: 220px"/></p>
+<p><img src="./img/drivetrainhub_helical_contact_lines.svg" alt="Contact plane with contact lines of meshing helical gear teeth" style="height: 220px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Contact plane with contact lines of meshing helical gear teeth</p><p>By following the convention of the previous figures for direction of rotation, tooth flanks begin contact at point $\rm{A}$ and end contact at point $\rm{E'}$.  As the contact lines move across the plane while the gears roll through mesh, the total length of the contact lengths is not necessarily constant.  This is considered in more detail, but first we must define contact ratios.</p>
 
 </div>
@@ -14249,7 +14210,7 @@ $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Pitch-Line-Velocity">Pitch Line Velocity<a class="anchor-link" href="#Pitch-Line-Velocity">&#182;</a></h4><p>The pitch line velocity refers to the linear velocity at the gear mesh pitch point.  Pitch line velocity is important to consider for gear lubrication and dynamics, which can influence stress, wear, and noise.</p>
-<p><img src="./img/drivetrainhub_pitch_line_speed.svg" alt="Pitch line speed of a helical gear pair" style="height: 200px"/></p>
+<p><img src="./img/drivetrainhub_pitch_line_speed.svg" alt="Pitch line speed of a helical gear pair" style="height: 200px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Pitch line speed of a helical gear pair</p><p>Pure rolling motion occurs at the pitch point of meshing helical gears and thus an equation for pitch line velocity is:</p>
 $$\vec{v}_w = \vec{r}_w \times  \vec{\omega}$$<p>where $\vec{v}_w = \vec{v}_\rm{P1,2}$ in the figure.</p>
 
@@ -14262,7 +14223,7 @@ $$\vec{v}_w = \vec{r}_w \times  \vec{\omega}$$<p>where $\vec{v}_w = \vec{v}_\rm{
 <h4 id="Transmission-Ratio">Transmission Ratio<a class="anchor-link" href="#Transmission-Ratio">&#182;</a></h4><p>Nominally, a constant ratio of angular velocities exists for the gears in a helical gear mesh, known as the <em>transmission ratio</em> or <em>gear mesh ratio</em>.  The ratio can be derived by considering the instantaneous linear velocity at the pitch point, where both gears are in pure roll.</p>
 $$\vec{r}_{w1} \times  \vec{\omega}_1 = \vec{r}_{w2} \times  \vec{\omega}_2$$<p>By solving this equation for the ratio of angular velocities, the gear mesh transmission ratio is defined as:</p>
 $$i = \frac{\omega_1}{\omega_2} = \frac{r_{w2}}{r_{w1}} = \frac{z_2}{z_1}$$<p>Direction of rotation depends on the gear mesh being external-external or internal-external type.</p>
-<p><img src="./img/drivetrainhub_gear_mesh_rotational_directions.svg" alt="Rotational directions of helical gear meshes" style="height: 250px"/></p>
+<p><img src="./img/drivetrainhub_gear_mesh_rotational_directions.svg" alt="Rotational directions of helical gear meshes" style="height: 250px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Rotational directions of helical gear meshes</p><div class="alert alert-block alert-danger" style="box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .13);">
     <b>Real helical gear meshes do not operate with a constant ratio of angular velocities at all times.</b>
     <br><br>
@@ -14275,7 +14236,7 @@ $$i = \frac{\omega_1}{\omega_2} = \frac{r_{w2}}{r_{w1}} = \frac{z_2}{z_1}$$<p>Di
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Sliding-Velocity">Sliding Velocity<a class="anchor-link" href="#Sliding-Velocity">&#182;</a></h4><p>While meshing helical gear teeth are in a state of pure roll at the pitch point, the tooth surfaces are sliding against each other in the approach and recess regions in the line of action.  This sliding action is why cylindrical involute gearing is sometimes described as analogous to a cam-follower mechanism.  Gear tooth sliding is important to gear mesh efficiency, wear, scuffing, and noise.</p>
-<p><img src="./img/drivetrainhub_gear_mesh_sliding_velocity.svg" alt="Components of linear velocity in the line of action" style="height: 390px"/></p>
+<p><img src="./img/drivetrainhub_gear_mesh_sliding_velocity.svg" alt="Components of linear velocity in the line of action" style="height: 390px; max-width: 100%"/></p>
 <p style="text-align: center; font-weight: bold;">Contact point linear velocity vectors in the line of action</p><p>In the figure above, the linear velocities of contact point $\rm{Y}$ are denoted by $v_\rm{Y1}$ and $v_\rm{Y2}$ for gear $1$ and gear $2$, respectively.</p>
 $$v_\text{Y1} = r_\text{Y1} \omega_1$$$$v_\text{Y2} = r_\text{Y2} \omega_2$$<p>The components of velocity normal to the line of action, and therefore tangential to the involute tooth profiles, are denoted by $v_\rm{Yt1}$ and $v_\rm{Yt2}$.</p>
 $$v_\text{Yt1} = r_{b1} \omega_1 \tan\alpha_\text{Y1}$$$$v_\text{Yt2} = r_{b2} \omega_2 \tan\alpha_\text{Y2}$$<p>Sliding action occurs when these tangential components of velocity are unequal, which is true everywhere except the pitch point, $\rm{P}$.  Sliding velocity is the relative tangential velocity of the tooth profiles, calculated as:</p>
@@ -14310,7 +14271,7 @@ $$\vartheta_1 = \frac{v_\text{R1}}{v_\text{Yt1}}$$$$\vartheta_2 = \frac{v_\text{
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell rendered celltag_hide_input">
 
 <div class="output_wrapper">
 <div class="output">
