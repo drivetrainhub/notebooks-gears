@@ -12,6 +12,7 @@ matplotlib = "*"
 ipywidgets = "*"
 nbconvert = "*"
 pandas = "*"
+qgrid = "*"
 
 [requires]
 python_version = "3.7"
